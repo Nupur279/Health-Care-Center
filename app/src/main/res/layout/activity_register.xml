@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/UI" />
+
+    <View
+        android:id="@+id/topview2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/topview"
+        android:background="@drawable/ic_wave__register_" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/simonetta"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="Donar Registration"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/input_full_name"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/topview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/full_name"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Full Name "
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/UI" />
+
+    <EditText
+        android:id="@+id/InputEmail"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/UI"
+        android:layout_below="@+id/input_full_name"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/InputPassword"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/InputEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/UI" />
+
+    <EditText
+        android:id="@+id/ComfirmPassword"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/UI"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:layout_below="@id/InputPassword"/>
+
+    <EditText
+        android:id="@+id/Phone_no"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/ComfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/call_r"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Phone No"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/UI" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn"
+        android:text="Register"
+        android:fontFamily="@font/simonetta"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Phone_no"/>
+
+    <TextView
+        android:id="@+id/CreateNewAccountNgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/simonetta"
+        android:text="Already have Account ?"
+        android:textColor="@color/UI"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

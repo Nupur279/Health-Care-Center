@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthcarecenter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthCareCenter">
+        <activity
+            android:name=".Verification_NGO_Medicine_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".verification_NGO_Money_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".Verification_NGO_Blood_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".About_App"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_Money_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".medicine_Request_Section"
+            android:exported="false" />
+        <activity
+            android:name=".blood_donation_donar"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_Medicine_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".Medicine_request"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_Blood_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".Medicine_Form"
+            android:exported="true" />
+        <activity
+            android:name=".money_donation"
+            android:exported="false" />
+        <activity
+            android:name=".Money_Form"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_registration"
+            android:exported="false" />
+        <activity
+            android:name=".Organ_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".Organ_Form"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".Intro_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            />
+        </activity>
+        <activity
+            android:name=".Medicine_donation"
+            android:exported="true" />
+        <activity
+            android:name=".Blood_Form"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

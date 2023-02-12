@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/velvet_ui"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/simonetta"
+            android:text="MONEY DONATION FORM"
+            android:textColor="@color/UI"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/money_donor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="20dp"
+            android:hint="Donor's Name: "
+            android:textColor="@color/black"
+            android:textColorHint="@color/UI" />
+
+        <EditText
+            android:id="@+id/money_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_donor_name"
+            android:layout_marginTop="20dp"
+            android:hint="Donor's Email: "
+            android:textColor="@color/black"
+            android:textColorHint="@color/UI" />
+
+        <EditText
+            android:id="@+id/money_donor_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_email"
+            android:layout_marginTop="20dp"
+            android:hint="Donor's Phone No.: "
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/UI" />
+
+        <TextView
+            android:id="@+id/money_donor_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money_donor_number"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/simonetta"
+            android:text="GENDER"
+            android:textColor="@color/UI"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/money_rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/money_donor_gender"
+            android:layout_below="@id/money_donor_number"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Male"
+                tools:ignore="TouchTargetSizeCheck"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Female"
+                tools:ignore="TouchTargetSizeCheck"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/money_upi_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_donor_gender"
+            android:layout_marginTop="20dp"
+            android:hint="UPI ID: "
+            android:text="nupurdiwate279@okaxis"
+            android:textColor="@color/black"
+            android:textColorHint="@color/UI" />
+
+        <EditText
+            android:id="@+id/money_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_upi_id"
+            android:layout_marginTop="20dp"
+            android:hint="Donation Amount: "
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/UI" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money_amount"
+
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/simonetta"
+            android:text="UPI Payment options:"
+            android:textColor="@color/UI"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/gpay"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/money_amount"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/gpay" />
+
+            <ImageView
+                android:id="@+id/paytm"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/money_amount"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/paytm" />
+
+            <ImageView
+                android:id="@+id/phonepe"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/money_amount"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/phonepe" />
+
+            <ImageView
+                android:id="@+id/amazonPay"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/money_amount"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/amazon" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/make_payment"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/money_amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toRightOf="@+id/text"
+            android:background="@drawable/login_btn"
+            android:text="MAKE PAYMENT"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/money_submit"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/login_btn"
+            android:text="SUBMIT"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

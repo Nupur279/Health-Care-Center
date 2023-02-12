@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/velvet_ui"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/med_name"
+            android:layout_width="175dp"
+            android:layout_height="28dp"
+
+            android:text="MEDICINE NAME"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textColor="@color/UI"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/med_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/UI"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med1"
+            android:layout_width="135dp"
+            android:layout_height="28dp"
+            android:text="Crocin     "
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med1_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 1 quantity"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med2"
+            android:layout_width="135dp"
+            android:layout_height="28dp"
+            android:text="Paracetamol"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med2_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 2 quantity"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med3"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Vicks Action"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med3_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 3 quantity"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med4"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="B-Complex"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med4_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 4 quantity"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med5"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Viatfol"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med5_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 5 quantity"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med6"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Omee"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med6_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 6 quantity"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/req_med7"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:hint="Medicine 7"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/req_med7_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 7 quantity"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
