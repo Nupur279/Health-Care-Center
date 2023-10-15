@@ -1,7 +1,10 @@
 # Health-Care-Center
 
 Health care center is android based application which aims the purpose of collecting the donated medicines and organizing them through our portal. 
-This API includes three interfaces namely: Blood Donation System, Medicine Donation System and Money Donation System. 
+This API includes three interfaces namely: 
+          Blood Donation System
+          Medicine Donation System
+          Money Donation System. 
 The software requirement for this android application is Android Studio. 
 In this interface, the donor needs to fill the form of the particular interfaces; the data filled by the donors can be seen in the NGO section only to the Authorized NGO workers. 
 The main objective for development of this project is to reduce the medical wastage. 
