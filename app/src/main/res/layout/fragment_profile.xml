@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Profile_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <View
+                android:id="@+id/topview"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/UI" />
+
+            <View
+                android:id="@+id/topview2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/topview"
+                android:background="@drawable/ic_wave" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/profile_pic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/Full_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:fontFamily="@font/simonetta"
+                android:includeFontPadding="false"
+                android:text="Suraj Sunil Shelke"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Full_Name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:text="surajshelke002@gmail.com"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-80dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#c8e0ca"
+                app:cardElevation="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/simonetta"
+                        android:gravity="center"
+                        android:text="Charity is Everywhere"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#c8e0ca"
+                app:cardElevation="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/simonetta"
+                        android:gravity="center"
+                        android:text="Sharing saves souls"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/profile_Name"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/topview2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/simonetta"
+            android:textStyle="bold"
+            android:hint="NAME"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColorHint="@color/UI" />
+
+        <EditText
+            android:id="@+id/profile_Email"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/topview2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/pro_email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:fontFamily="@font/simonetta"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColorHint="@color/UI"/>
+
+        <EditText
+            android:id="@+id/Phone_no"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/topview2"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/simonetta"
+            android:textStyle="bold"
+            android:hint="PHONE NO"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColorHint="@color/UI"/>
+
+    </LinearLayout>
+</FrameLayout>

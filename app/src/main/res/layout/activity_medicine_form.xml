@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/velvet_ui"
+    tools:context=".Medicine_Form">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/simonetta"
+        android:gravity="center"
+        android:text="Medicine Donation System"
+        android:textColor="@color/UI"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/user_blood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.469"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/medicine" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_med"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/simonetta"
+        android:gravity="center"
+        android:text="User"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/request_med"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/user_med"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/simonetta"
+        android:gravity="center"
+        android:text="Request"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/med_NGO"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/request_med"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/simonetta"
+        android:gravity="center"
+        android:text="NGO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

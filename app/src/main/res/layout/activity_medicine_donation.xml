@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Medicine_donation"
+    android:background="@drawable/bg_ui"
+    android:padding="28dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEDICINE DONATION"
+            android:layout_gravity="center_horizontal"
+            android:textSize="21sp"
+            android:fontFamily="@font/simonetta"
+            android:textColor="@color/UI"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/UI">
+
+            <EditText
+                android:id="@+id/med_donar_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Donar's Name"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/UI"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/med_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/UI"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/med_donar_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:fontFamily="@font/simonetta"
+                android:text="City"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/UI"
+            android:layout_marginTop="12dp">
+
+            <Spinner
+                android:id="@+id/city_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/crocin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CROCIN"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/crocin_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_crocin"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/crocin_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/paracetamol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PARACETAMOL"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/paracetamol_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_paracetamol"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/paracetamol_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/Vicks_Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VICKS ACTION"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/Vicks_Action_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:visibility="invisible"
+                android:text="0"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_Vicks_Action"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/Vicks_Action_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/BComplex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B-COMPLEX"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/BComplex_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:visibility="invisible"
+                android:text="0"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_BComplex"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/BComplex_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/vitafol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIATFOL"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/vitafol_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:visibility="invisible"
+                android:textColorHint="@color/UI"
+                android:text="0"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_vitafol"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/vitafol_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/Omee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OMEE"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/Omee_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:text="0"
+                android:visibility="invisible"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_Omee"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/Omee_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/Other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTHERS"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/Other_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Quantity:"
+                android:inputType="number"
+                android:visibility="invisible"
+                android:text="0"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Other_med_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Medicine name: "
+                android:visibility="invisible"
+                android:textColorHint="@color/UI"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/expiry_Other"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:text="Expiry Date"/>
+
+            <TextView
+                android:id="@+id/Other_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/med_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/simonetta"
+                android:textStyle="bold"
+                android:textColor="@color/UI"
+                android:text="Select and upload the picture of the medicines to be donated:- "/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="135dp"
+            android:layout_x="134dp"
+            android:layout_y="102dp"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/med_submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:textColor="@color/white"
+                android:fontFamily="@font/simonetta"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:text="SUBMIT"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>

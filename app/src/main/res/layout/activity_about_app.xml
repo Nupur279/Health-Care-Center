@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_App"
+    android:background="@drawable/velvet_sea">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/simonetta"
+            android:padding="15dp"
+            android:text="HEALTH CARE CENTER"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/about_animation"
+            android:layout_width="225dp"
+            android:layout_height="242dp"
+            android:layout_below="@id/about_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/about_us" />
+
+        <TextView
+            android:id="@+id/about_us"
+            android:padding="45dp"
+            android:layout_below="@+id/about_animation"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/simonetta"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="\t \t Health care center is android based application which aims the purpose of collecting the donated medicines and organizing them through our portal. This API includes three interfaces namely: Blood Donation System, Medicine Donation System and Money Donation System.  The main objective for development of this project is to reduce the medical wastage. People can also send the request in the individual interfaces who are in need for medicines.  "/>
+    </RelativeLayout>
+
+
+    
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

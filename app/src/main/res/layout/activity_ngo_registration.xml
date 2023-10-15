@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/topview"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/UI" />
+
+            <View
+                android:id="@+id/topview2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/topview"
+                android:background="@drawable/ic_wave__register_" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/simonetta"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="NGO Registration"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+
+            <EditText
+                android:id="@+id/ngo_input_full_name"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_below="@+id/topview2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/full_name"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Full Name "
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI" />
+
+
+
+            <EditText
+                android:id="@+id/ngo_InputEmail"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/ngo_input_full_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:autofillHints=""
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI" />
+
+            <EditText
+                android:id="@+id/ngo_InputPassword"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/ngo_InputEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Create Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI" />
+
+            <EditText
+                android:id="@+id/Ngo_ComfirmPassword"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/ngo_InputPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:autofillHints=""
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI" />
+
+            <EditText
+                android:id="@+id/ngo_phone_no"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/Ngo_ComfirmPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:autofillHints=""
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/call_r"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Phone No"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI" />
+
+            <EditText
+                android:id="@+id/nago_land_line"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/call_r"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Landline No"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI"
+                android:layout_below="@+id/ngo_phone_no"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="115dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/nago_land_line"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:fontFamily="@font/simonetta"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:text="Company Type:"
+                android:gravity="center"
+                android:textColor="@color/UI"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="188dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="24dp"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:layout_below="@id/nago_land_line"
+                android:layout_toRightOf="@id/textView5"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp">
+
+                <RadioButton
+                    android:id="@+id/publicco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Public Ltd."
+                    android:textColor="@color/UI"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/privateco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Private Ltd."
+                    android:textStyle="bold"
+                    android:textColor="@color/UI"
+                    android:fontFamily="@font/simonetta"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/license"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_below="@+id/radioGroup3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/input_bg"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Type the name of selected License"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/UI" />
+
+            <Button
+                android:id="@+id/select_licence"
+                android:layout_width="160dp"
+                android:layout_height="42dp"
+                android:layout_below="@id/license"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/simonetta"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="13dp"
+                android:text="Select License"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/upload_licence"
+                android:layout_width="224dp"
+                android:layout_height="42dp"
+                android:layout_below="@id/license"
+                android:layout_toRightOf="@+id/select_licence"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/login_btn"
+                android:drawableLeft="@drawable/upload"
+                android:fontFamily="@font/simonetta"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="13dp"
+                android:text="Upload "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ngo_loginbtn"
+                android:layout_width="224dp"
+                android:layout_height="42dp"
+                android:background="@drawable/login_btn"
+                android:text="Register"
+                android:fontFamily="@font/simonetta"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@+id/upload_licence"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="22dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/ngo_CreateNewAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have account ?"
+                android:textColor="@color/UI"
+                android:textStyle="bold"
+                android:fontFamily="@font/simonetta"
+                android:textSize="16sp"
+                android:layout_below="@+id/ngo_loginbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="22dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

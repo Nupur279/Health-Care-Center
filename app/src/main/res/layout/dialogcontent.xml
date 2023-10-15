@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/velvet_ui"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/med_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEDICINE \n NAME"
+            android:textSize="18sp"
+            android:textColor="@color/UI"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/med_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPIRY \n DATE"
+            android:textSize="18sp"
+            android:textColor="@color/UI"
+            android:textStyle="bold"
+            android:layout_marginStart="65dp"/>
+
+        <TextView
+            android:id="@+id/med_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="18sp"
+            android:textColor="@color/UI"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med1"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Crocin"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/med1_expiry_date_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 1 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/med1_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 1 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med2"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Paracetamol"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med2_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 2 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med2_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 2 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med3"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Vicks Action"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med3_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 3 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med3_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 3 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med4"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="B-Complex"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med4_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 4 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med4_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 4 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med5"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Viatfol"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med5_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 5 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med5_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 5 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/get_med6"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Omee"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med6_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 6 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/get_med6_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 6 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/med7_name"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:hint="Medicine 7"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/med7_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 7 expire"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/med7_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Med 7 quantity"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
