@@ -4,12 +4,20 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     compileSdk 32
+=======
+    compileSdk 33
+>>>>>>> f25ffd3b079f0c9e3b522287d7bfe42b60ea1a4d
 
     defaultConfig {
         applicationId "com.example.healthcarecenter"
         minSdk 28
+<<<<<<< HEAD
         targetSdk 32
+=======
+        targetSdk 33
+>>>>>>> f25ffd3b079f0c9e3b522287d7bfe42b60ea1a4d
         versionCode 1
         versionName "1.0"
 
